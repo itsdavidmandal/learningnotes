@@ -11,21 +11,16 @@
         Youtube Subscribe 
     </p>
 
-    <button onclick="const buttonelement = document.querySelector('.subsbutton')
-    if  (buttonelement.innerHTML === 'Subscribe'){
-        buttonelement.innerHTML = 'Subscribed'
-    }else  {
-        buttonelement.innerHTML = 'Subscribe'
-    }
+    <!-- Subscribe button -->
+    <button onclick=" // On button click event
+        const buttonelement = document.querySelector('.subsbutton'); // Select the button element with class 'subsbutton' and assign it to the variable buttonelement
+        if (buttonelement.innerHTML === 'Subscribe'){ // If the button text is 'Subscribe'
+            buttonelement.innerHTML = 'Subscribed'; // Change the button text to 'Subscribed'
+        } else { // Otherwise
+            buttonelement.innerHTML = 'Subscribe'; // Change the button text to 'Subscribe'
+        }
     "
-    class="subsbutton">
-        Subscribe 
-    </button>
+    class="subsbutton"> </button>
 
-    <script>
-
-
-
-    </script>
 </body>
 </html>
