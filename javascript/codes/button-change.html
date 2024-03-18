@@ -12,15 +12,19 @@
     </p>
 
     <!-- Subscribe button -->
-    <button onclick=" // On button click event
+    <button onclick="subscribed();"class="subsbutton"> </button>
+
+    <script>
+        function subscribed (){
+            // On button click event
         const buttonelement = document.querySelector('.subsbutton'); // Select the button element with class 'subsbutton' and assign it to the variable buttonelement
         if (buttonelement.innerHTML === 'Subscribe'){ // If the button text is 'Subscribe'
             buttonelement.innerHTML = 'Subscribed'; // Change the button text to 'Subscribed'
         } else { // Otherwise
             buttonelement.innerHTML = 'Subscribe'; // Change the button text to 'Subscribe'
         }
-    "
-    class="subsbutton"> </button>
+        }
+    </script>
 
 </body>
 </html>
