@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Amazon Calculator</p>
+
+    <input type="text" name="" class="js-cost-input" placeholder="Cost of orders" onkeydown="keydownb();">
+
+    <button onclick=" calculatetotal();">Calculate</button>
+    <p class="js-totalcost"></p>
+
+    <script>
+
+        function calculatetotal (){
+            const inpute = document.querySelector('.js-cost-input');
+            let cost = Number(inpute.value);
+
+            if (cost< 40){
+                cost = cost +  10;
+            }
+            
+            document.querySelector('.js-totalcost').innerHTML = `${cost}`;
+        }
+
+        function keydownb(){
+            if (event.key === 'Enter'){
+        calculatetotal();
+            }
+        }
+
+        
+
+    </script>
+</body>
+</html>
