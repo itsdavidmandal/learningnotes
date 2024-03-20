@@ -3,7 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=sc, initial-scale=1.0">
-    <title>Document</title>
+    <title>YT Button</title>
+    <style>
+
+        button {
+            border: none;
+            background-color: black;
+            border-radius: 35px;
+            color: white;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+            font-weight: bold;
+            cursor: pointer ;
+            
+        }
+
+        .is-subscribed{
+            border: none;
+            background-color: gray;
+            border-radius: 35px;
+            color: black;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+            font-weight: bold;
+            cursor: pointer ;
+            
+        }
+
+    </style>
+
 </head>
 <body>
 
@@ -12,7 +44,7 @@
     </p>
 
     <!-- Subscribe button -->
-    <button onclick="subscribed();"class="subsbutton"> </button>
+    <button onclick="subscribed();"class="subsbutton">Subscribe</button>
 
     <script>
         function subscribed (){
@@ -20,8 +52,10 @@
         const buttonelement = document.querySelector('.subsbutton'); // Select the button element with class 'subsbutton' and assign it to the variable buttonelement
         if (buttonelement.innerHTML === 'Subscribe'){ // If the button text is 'Subscribe'
             buttonelement.innerHTML = 'Subscribed'; // Change the button text to 'Subscribed'
+            buttonelement.classList.add('is-subscribed');  
         } else { // Otherwise
             buttonelement.innerHTML = 'Subscribe'; // Change the button text to 'Subscribe'
+            buttonelement.classList.remove('is-subscribed');
         }
         }
     </script>
